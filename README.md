@@ -156,7 +156,7 @@ BRIDGE/
 └── LICENSE
 ```
 
-## Citation
+<!-- ## Citation
 
 If you find BRIDGE useful in your research, please cite our paper:
 
@@ -167,7 +167,7 @@ If you find BRIDGE useful in your research, please cite our paper:
   booktitle = {KDD},
   year      = {2026}
 }
-```
+``` -->
 
 ## License
 
