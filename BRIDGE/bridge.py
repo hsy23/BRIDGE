@@ -155,6 +155,8 @@ class BRIDGE:
             for accept_loc, accept_rem in zip(accept_locs, accept_rems):
                 self.stats.update(name="AcceptanceLoc", stat=accept_loc)
                 self.stats.update(name="AcceptanceRem", stat=accept_rem)
+                self.stats.update(name="RejectLoc", stat=not accept_loc)
+                self.stats.update(name="RejectRem", stat=not accept_rem)
 
             reject_idx = None
             for i, (accept_loc, accept_rem) in enumerate(zip(accept_locs, accept_rems)):
@@ -171,6 +173,11 @@ class BRIDGE:
                     step_len += 1
             if reject_idx is not None:
                 self.scroll_back_pos[0] = self.output_tokens.qsize()
+                self.stats.update(name="RollbackCount", stat=1)
+                if not accept_locs[reject_idx]:
+                    self.stats.update(name="RollbackLoc", stat=1)
+                if not accept_rems[reject_idx]:
+                    self.stats.update(name="RollbackRem", stat=1)
                 if self.aggregation_mode == "BRIDGE" and self.aggregator is not None:
                     self.aggregator.step = self.scroll_back_pos[0]
                     self.aggregator._stash_loc.clear()

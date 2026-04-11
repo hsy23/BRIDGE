@@ -49,7 +49,7 @@ class LatencyConfig(BRIDGEConfig):
 
 class LatencyEvaluator(Evaluator):
 
-    def __init__(self, config: LatencyConfig, baseline_name="BRIDGE", stats_dict={}):
+    def __init__(self, config: LatencyConfig, baseline_name="DRAGON", stats_dict={}):
         super().__init__(config, name="Latency")
         self.name = "Latency"
         transceiver_stats.new_record()

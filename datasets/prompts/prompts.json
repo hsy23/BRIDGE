@@ -1,0 +1,17 @@
+[
+    {
+        "query": "This question is about hashing.\n(a) Briefly explain why hash tables are useful for storing many integers."
+    },
+    {
+        "query": "Dissect the reasoning behind the difference when you subtract the total number of fingers on both hands from the total number of days in two weeks."
+    },
+    {
+        "query": "What are the steps to migrate a monolithic web app to a micro service native mobile apps using open shift?"
+    },
+    {
+        "query": "How do I use a-primitives in my a-scene in a-frame to give the appearance that the whole scene is happeining inside a jail scene"
+    },
+    {
+        "query": "How do laws around intellectual property affect the music industry, and what are some notable legal cases involving copyright infringement?"
+    }
+]

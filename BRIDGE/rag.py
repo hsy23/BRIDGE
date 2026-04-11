@@ -116,7 +116,7 @@ class Rag:
     ) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor, List[str]]:
         if not self.do_retrieve:
             with time_meter.timer("Tokenization"):
-                prompt = self.local_context or ""
+                prompt = self.local_context or query or ""
                 if "llama" in (self.config.generator.model or "").lower():
                     prompt = self._wrap_chat_prompt(prompt)
                 scores = [100.0] * max(self.aggregate_size, 1)
