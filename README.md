@@ -6,6 +6,9 @@ A **B**lock-wise speculative **R**AG framework for **I**nter-database **D**istri
 
 BRIDGE is a distributed RAG (Retrieval-Augmented Generation) framework designed for device-cloud collaborative inference. It enables the simultaneous integration of **personalized on-device information** and **generic cloud-side knowledge** through a novel block-wise speculative decoding mechanism, significantly reducing generation latency while preserving output quality.
 
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/cb1b2176-42c2-404e-a41a-8a9e31027508" />
+
+
 ## Overview
 
 In real-world deployment, user-specific data (e.g., chat history, preferences) often resides on-device due to privacy constraints, while rich generic knowledge bases are hosted on the cloud. BRIDGE bridges this gap by:
