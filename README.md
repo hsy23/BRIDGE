@@ -1,5 +1,7 @@
 # BRIDGE
 
+**Congratulations! BRIDGE has been accepted to the ACM SIGKDD 2026 Research Track.**
+
 https://hsy23.github.io/BRIDGE_Introduction_Page/
 
 A **B**lock-wise speculative **R**AG framework for **I**nter-database **D**istributed **GE**neration.
