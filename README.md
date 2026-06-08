@@ -1,5 +1,7 @@
 # BRIDGE
 
+https://hsy23.github.io/BRIDGE_Introduction_Page/
+
 A **B**lock-wise speculative **R**AG framework for **I**nter-database **D**istributed **GE**neration.
 
 BRIDGE is a distributed RAG (Retrieval-Augmented Generation) framework designed for device-cloud collaborative inference. It enables the simultaneous integration of **personalized on-device information** and **generic cloud-side knowledge** through a novel block-wise speculative decoding mechanism, significantly reducing generation latency while preserving output quality.
